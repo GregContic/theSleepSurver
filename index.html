@@ -44,64 +44,70 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="contact-right">
 						<h2>Please enter your info:</h2>
 						<div class="contact-form">
-							<form method="post" action="contact-post.html">
-								<input type="text" class="textbox" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-								<input type="text" class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-								<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Tell us something about yourself.</textarea>
-								
+							<form method="post" action="intentional-error.html">
+								<input type="text" class="textbox" placeholder="Name:" required>
+								<input type="text" class="textbox" placeholder="Email:" required>
+								<textarea placeholder="Tell us something about yourself..." ></textarea>
+								<fieldset>
+									<h2>Do you think sleeping is important?</h2>
+									<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="choice1"/> Yes</label>
+									<label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> Of Course!</label>
+									<label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> Sleep is the cousin of death therefore I detest it.</label>
+								  </fieldset>
+								  <div class="ass">
+									<fieldset>
+										<h2>How much do you sleep on a nightly basis?</h2>
+										<label for="personal-account"><input type="radio" name="asdf" value="choice6"/> Under 4 Hours</label>
+										<label for="business-account"><input type="radio" name="asdf" class="inline" value="choice7"/> 5-6 Hours</label>
+										<label for="personal-account"><input type="radio" name="asdf" class="inline" value="choice8"/> 7-8 Hours</label>
+										<label for="business-account"><input type="radio" name="asdf" class="inline" value="choice9"/> More than 8 Hours</label>
+									  </fieldset>
+								  </div>
+								  
+								  <fieldset>
+									<h2>Have you experienced any of the following? (Click all that apply)</h2>
+								<label for="personal-account">
+								  <input id="personal-account" type="checkbox"  name="terms-and-conditions" class="inline" value="luh"/> Sleepwalking
+								</label>
+								<label for="personal-account">
+								  <input id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" value="calm"/> Snoring
+								</label>
+								<label for="personal-account">
+								  <input id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" value="fit"/> Experiencing Nightmares
+								</label>
+								<label for="personal-account">
+								  <input id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" value="luh"/> Casually Invade Poland
+								</label>
+								<label for="personal-account">
+								  <input id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" value="calm"/> Waking up at the middle of the night
+								</label>
+								<label for="personal-account">
+								  <input id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" class="inline" value="fit"/> Sleep Paralysis
+								</label>
+								</fieldset>
+								  <fieldset>
+									<h2 for="referrer">What is your preferred room temperature when sleeping?
+									  <select id="dropdown" name="referrer">
+										<option value="">(select one)</option>
+										<option value="1">Freezing</option>
+										<option value="2">Very Cold</option>
+										<option value="3">Cold</option>
+										<option value="4">Warm</option>
+										<option value="">Hot</option>
+										<option value="1">Very Hot</option>
+										<option value="2">Desert-like</option>
+									  </select>
+									</h2>
+									<h2 for="bio">Do you use any medications or supplements to help you sleep? (If yes, please specify. Ignore if not.):
+									  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Yes, I use Fentanyl to sleep better..."></textarea>
+									</h2>
+									<h2 for="bio">How has your sleep been affected by recent life events (stress, travel, etc.)?:
+									  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Stress from work gravely affected my sleep..."></textarea>
+									</h2>
+									<input type="submit" value="Submit">
+								  </fieldset>
 							</form>
-							<fieldset>
-								<h2>Do you think sleeping is important?</h2>
-								<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="choice1"/> Yes</label>
-								<label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> Of Course!</label>
-								<label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> Sleep is the cousin of death therefore I detest it.</label>
-								<h2>How much do you sleep on a nightly basis?</h2>
-								<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="choice1"/> Under 4 Hours</label>
-								<label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> 5-6 Hours</label>
-								<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="choice1"/> 7-8 Hours</label>
-								<label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> More than 8 Hours</label>
-								<h2>Have you experienced any of the following? (Click all that apply)</h2>
-								<label for="personal-account">
-								  <input id="personal-account" type="checkbox" required name="terms-and-conditions" class="inline" value="luh"/> Sleepwalking
-								</label>
-								<label for="personal-account">
-								  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="calm"/> Snoring
-								</label>
-								<label for="personal-account">
-								  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="fit"/> Experiencing Nightmares
-								</label>
-								<label for="personal-account">
-								  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="luh"/> Casually Invade Poland
-								</label>
-								<label for="personal-account">
-								  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="calm"/> Waking up at the middle of the night
-								</label>
-								<label for="personal-account">
-								  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="fit"/> Sleep Paralysis
-								</label>
-								
-							  </fieldset>
-							  <fieldset>
-								<h2 for="referrer">What is your preferred room temperature when sleeping?
-								  <select id="dropdown" name="referrer">
-									<option value="">(select one)</option>
-									<option value="1">Freezing</option>
-									<option value="2">Very Cold</option>
-									<option value="3">Cold</option>
-									<option value="4">Warm</option>
-									<option value="">Hot</option>
-									<option value="1">Very Hot</option>
-									<option value="2">Desert-like</option>
-								  </select>
-								</h2>
-								<h2 for="bio">Do you use any medications or supplements to help you sleep? (If yes, please specify. Ignore if not.):
-								  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Yes, I use Fentanyl to sleep better..."></textarea>
-								</h2>
-								<h2 for="bio">How has your sleep been affected by recent life events (stress, travel, etc.)?:
-								  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Stress from work gravely affected my sleep..."></textarea>
-								</h2>
-								<input type="submit" value="Submit">
-							  </fieldset>
+							
 						</div>
 					</div>
 					<div class="clear"> </div>
